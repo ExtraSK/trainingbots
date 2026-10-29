@@ -1,0 +1,161 @@
+# YOU NEED THIS OR IT WONT WORK: https://https://botdepend.extrask.site/
+# custom-made website by extrask. download citizens there so plugin works.
+bot:
+  default-name: "%player_name%'s Bot"
+  skin:
+    player-name: "Steve"
+    texture: ""
+    signature: ""
+  always-slow-falling: true
+  immortality: true
+  respawn-after-death: true
+  respawn-delay: 20
+  spawn-radius: 100
+  immortality-radius: 100
+  shield: false
+  glowing: false
+  look-at-player: false
+  existing-bot-radius: 60
+  disabled-worlds:
+    - "spawn"
+
+armor:
+  helmet:
+    material: NETHERITE_HELMET
+  chestplate:
+    material: NETHERITE_CHESTPLATE
+  leggings:
+    material: NETHERITE_LEGGINGS
+  boots:
+    material: NETHERITE_BOOTS
+
+gui:
+  title: "Extra´s Bot GUI"
+  frame:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+    lore: []
+    slots: []
+  items:
+    helmet:
+      slot: 11
+      material: NETHERITE_HELMET
+      name: "&b&lHelmet"
+      lore:
+        - "&7Status: {status}"
+        - ""
+        - "&7Sets the helmet enchantment."
+        - "&7Enchantment: {enchantment}"
+        - ""
+        - "&e➜ Click to change this setting."
+    slow-falling:
+      slot: 15
+      material: FEATHER
+      name: "&b&lSlow Falling"
+      lore:
+        - "&7Status: {status}"
+        - ""
+        - "&7Prevents fall damage for the bot."
+        - ""
+        - "&e➜ Click to change this setting."
+    immortality:
+      slot: 16
+      material: TOTEM_OF_UNDYING
+      name: "&b&lOwner Immortality"
+      lore:
+        - "&7Status: {status}"
+        - ""
+        - "&7Protects you while near your bot."
+        - ""
+        - "&e➜ Click to change this setting."
+    shield:
+      slot: 33
+      material: SHIELD
+      name: "&b&lShield Blocking"
+      lore:
+        - "&7Status: {status}"
+        - ""
+        - "&7Makes the bot block with its shield."
+        - ""
+        - "&e➜ Click to change this setting."
+    chestplate:
+      slot: 20
+      material: NETHERITE_CHESTPLATE
+      name: "&b&lChestplate"
+      lore:
+        - "&7Status: {status}"
+        - ""
+        - "&7Sets the chestplate enchantment."
+        - "&7Enchantment: {enchantment}"
+        - ""
+        - "&e➜ Click to change this setting."
+    glowing:
+      slot: 24
+      material: GLOWSTONE_DUST
+      name: "&b&lGlow Effect"
+      lore:
+        - "&7Status: {status}"
+        - ""
+        - "&7Adds a glowing outline to the bot."
+        - ""
+        - "&e➜ Click to change this setting."
+    look-at-player:
+      slot: 25
+      material: PLAYER_HEAD
+      name: "&b&lTrack Players"
+      lore:
+        - "&7Status: {status}"
+        - ""
+        - "&7Makes the bot face nearby players."
+        - ""
+        - "&e➜ Click to change this setting."
+    leggings:
+      slot: 29
+      material: NETHERITE_LEGGINGS
+      name: "&b&lLeggings"
+      lore:
+        - "&7Status: {status}"
+        - ""
+        - "&7Sets the leggings enchantment."
+        - "&7Enchantment: {enchantment}"
+        - ""
+        - "&e➜ Click to change this setting."
+    boots:
+      slot: 38
+      material: NETHERITE_BOOTS
+      name: "&b&lBoots"
+      lore:
+        - "&7Status: {status}"
+        - ""
+        - "&7Sets the boots enchantment."
+        - "&7Enchantment: {enchantment}"
+        - ""
+        - "&e➜ Click to change this setting."
+    spawn:
+      slot: 49
+      material: DIAMOND
+      name: "&a&lSPAWN PRACTICE BOT"
+      lore:
+        - "&7Ready to create your practice bot."
+        - ""
+        - "&a➜ Click to spawn with these settings."
+
+starter-pack:
+  enabled: false
+  items:
+    end_crystal: 64
+    obsidian: 64
+    experience_bottle: 64
+    golden_apple: 16
+    enchanted_golden_apple: 4
+
+messages:
+  no-permission: "&cYou don't have permission."
+  player-too-close: "&cYou cannot spawn a bot while another player is within {radius} blocks."
+  bot-too-close: "&cThere is already a bot close."
+  spawn-world-disabled: "&cYou can not spawn a bot in Spawn."
+  bot-spawned: "&aTraining bot spawned."
+  bot-removed: "&cTraining bot removed."
+  no-bot: "&cYou do not have a nearby training bot."
+  reloaded: "&aTrainingBots configuration reloaded."
+  help: "&e/bot &7opens the setup menu. &e/bot spawn&7, &e/bot remove&7, &e/bot reload"

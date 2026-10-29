@@ -1,0 +1,17 @@
+name: TrainingBots
+version: 1.0.3
+main: com.extrask.trainingbots.TrainingBotsPlugin
+api-version: '1.21'
+depend: [Citizens]
+author: Extrask
+description: A /bot for crystalpvp practice servers
+website: https://extrask.site
+commands:
+  bot:
+    description: Configure and manage CPvP training bots.
+    usage: /bot [spawn|remove|reload|help]
+permissions:
+  trainingbots.use:
+    default: true
+  trainingbots.admin:
+    default: op
